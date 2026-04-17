@@ -20,7 +20,7 @@ gem "jbuilder"
 # gem "bcrypt", "~> 3.1.7"
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem "tzinfo-data", platforms: %i[ windows jruby ]
+gem "tzinfo-data", platforms: %i[windows jruby]
 
 # Use the database-backed adapters for Rails.cache, Active Job, and Action Cable
 gem "solid_cache"
@@ -49,7 +49,7 @@ gem "sassc-rails"
 group :development, :test do
   gem "dotenv-rails"
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
-  gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
+  gem "debug", platforms: %i[mri windows], require: "debug/prelude"
 
   # Audits gems for known security defects (use config/bundler-audit.yml to ignore issues)
   gem "bundler-audit", require: false
@@ -59,6 +59,9 @@ group :development, :test do
 
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
+
+  gem "factory_bot_rails"
+  gem "faker"
 end
 
 group :development do
@@ -71,3 +74,26 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+# Auth
+gem "devise"
+
+# Autorisation
+gem "pundit"
+
+# Uploads
+gem "active_storage_validations"
+
+# Enum lisibles
+gem "enum_help"
+
+# Pagination
+gem "pagy", "~> 9.0"
+
+# Paiement (plus tard, mais autant l'avoir)
+gem "stripe", "~> 12.0"
+
+# Background jobs (pour notifs, scoring async)
+gem "sidekiq", "~> 7.0"
+
+# Serializer (pour les réponses JSON si API interne)
+gem "blueprinter"
