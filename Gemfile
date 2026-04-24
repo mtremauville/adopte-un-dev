@@ -90,7 +90,7 @@ gem "enum_help"
 gem "pagy", "~> 9.0"
 
 # Paiement (plus tard, mais autant l'avoir)
-gem "stripe", "~> 12.0"
+gem "stripe", "~> 19.1"
 
 # Background jobs (pour notifs, scoring async)
 gem "sidekiq", "~> 7.0"
