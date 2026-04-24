@@ -93,7 +93,7 @@ gem "pagy", "~> 9.0"
 gem "stripe", "~> 12.0"
 
 # Background jobs (pour notifs, scoring async)
-gem "sidekiq", "~> 7.0"
+gem "sidekiq", "~> 8.1"
 
 # Serializer (pour les réponses JSON si API interne)
 gem "blueprinter"
