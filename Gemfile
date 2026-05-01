@@ -87,7 +87,7 @@ gem "active_storage_validations"
 gem "enum_help"
 
 # Pagination
-gem "pagy", "~> 9.0"
+gem "pagy", "~> 43.5"
 
 # Paiement (plus tard, mais autant l'avoir)
 gem "stripe", "~> 12.0"
